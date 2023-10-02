@@ -19,7 +19,7 @@ namespace CA231002
                     autok.Add(new Auto(sr.ReadLine()));
                 }
             }
-            var f3 = autok.OrderBy(a => a.Gyorsulas).Last();
+            var f3 = autok.OrderBy(a => a.Gyorsulas).First();
             Console.WriteLine("3. feladat: leggyorsabb auto:");
             Console.WriteLine($"\tModel: {f3.Model}\n" +
                 $"\tTeljesitmeny: {f3.Teljesitmeny} le.\n" +
